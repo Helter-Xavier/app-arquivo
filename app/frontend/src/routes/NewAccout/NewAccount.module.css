@@ -1,0 +1,97 @@
+:root {
+    --cor1:#0F6CBD;
+    --cor2: #fff;
+    --cor3: #ECEDED;
+    --cor4: #4c91ce;
+    --cor5: rgb(174, 183, 212);
+    --cor6: rgb(232, 241, 252);
+    --cor7: #1C2536;
+    --cor8: #475775;
+    --cor9:#E8F1FC;
+
+}
+.AddConta{
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.container{
+    margin-left: 200px;
+}
+
+
+.container .formConta{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 100px;
+}
+
+.formConta .containerInputs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.containerInputs label {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor7);
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.containerInputs label > input {
+    width: 500px;
+    height: 25px;
+    outline: none;
+    cursor:text;
+    border: none;
+    border-bottom: 1px solid var(--cor5);
+    background-color: var(--cor2);
+    
+}
+
+.containerInputs label > input:focus {
+    border-bottom: 1px solid var(--cor4);
+}
+
+.containerInputs p {
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.formConta{
+    border: 1px solid var(--cor7);
+    padding: 30px;
+    background-color: var(--cor2);
+    -webkit-box-shadow: -1px 3px 15px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 15px 1px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 15px 1px rgba(0,0,0,0.75);
+    border-radius: 8px;
+}
+
+.formConta h1 {
+    text-align: center;
+}
+
+.formConta .btnCadastrar{
+    margin: 15px auto;
+    font-size: 14px;
+    background-color: var(--cor4);
+    color: var(--cor2);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 8px 25px;
+    transition: all .2s ease-in-out;
+
+}
+
+.formConta .btnCadastrar:hover {
+    transition: all .2s ease-in-out;
+    background-color: var(--cor1);
+}
