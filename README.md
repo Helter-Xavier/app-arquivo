@@ -1,4 +1,4 @@
-<h1 align="center">Gerenciamento de Arquivos</h1>
+<h1 align="center">Armazenamento de Arquivos</h1>
 
    <h2 align="center">Tecnologias usadas
 <div style="display: inline_block"><br>
