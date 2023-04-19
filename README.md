@@ -1,5 +1,5 @@
 <h1 align="center">Gerenciamento de Arquivos</h1>
-    <span>Tecnologias usadas</span>
+    <h2>Tecnologias usadas</h2>
 <h2 align="center">
     <a href="https://pt-br.reactjs.org/">🔗 React</a>
    <div style="display: inline_block"><br>
