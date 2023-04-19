@@ -1,7 +1,7 @@
 <h1 align="center">Gerenciamento de Arquivos</h1>
-    <h2>Tecnologias usadas</h2>
+    <h2 align="center">Tecnologias usadas</h2>
 <h2 align="center">
-    <a href="https://pt-br.reactjs.org/">🔗 React</a>
+   <a href="https://pt-br.reactjs.org/">🔗 React</a>
    <div style="display: inline_block"><br>
   <img align="center" alt="Helter-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Helter-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
