@@ -2,11 +2,14 @@
 
 ## Link do projeto _[Gerenciador de Arquivos](https://github.com/Helter-Xavier/app-arquivo)_.
 
+## Funcionalidades do Sistema
+
+- O Sistema de Gerenciador de Arquivos
+
 ### Setup de ambiente:
 
 - [Node LTS](https://nodejs.org/en)
 - [Npm 9.5.0](https://docs.npmjs.com/cli/v6/commands/npm-install)
-- [React](https://react.dev/)
 
 ### Estrutura de pastas
 
@@ -61,10 +64,9 @@ module.exports = sequelize;
 
 - Localização: `backend/models/Users.js`
 
-
 ## Autenticação de usuario e Senha criptografada
 
-- Localização: '_backend/middleware/auth.js_'
+- Localização: `backend/middleware/auth.js`
 
 ### Rota de Registro de usuário
 
@@ -90,6 +92,8 @@ app.post("/register", async (req, res) => {
 ## Autenticação de usuario e Senha criptografada
 
 - Localização: `backend/middleware/uploadIamge.js`
+- Armazena os arquivos na pasta: `./public/upload/docUsers`
+                
 
 ### Rota de Upload de documentos PDF
 
@@ -134,3 +138,4 @@ app.post("/upload-docs", uploadDocs.single("image"), (req, res) => {
 - `/vizualizar-documento/:id` -> Vizualizar documento pelo ID quando selecionado
 - `/list-prontuario` -> Apagar documento do sistema pelo ID selecionado
 - `/deleteFiles/:id` -> Listagem de tipo de documento (Prontuarios)
+
