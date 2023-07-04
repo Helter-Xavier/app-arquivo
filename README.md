@@ -2,7 +2,7 @@
 
 ## Link do projeto _[Gerenciador de Arquivos](https://github.com/Helter-Xavier/app-arquivo)_.
 
-## Funcionalidades do Sistema
+## Funcionalidades do Sistema / Backend
 
 - O Sistema de Gerenciador de Arquivos
 
@@ -13,7 +13,7 @@
 
 ### Estrutura de pastas
 
-![alt text](./estrutura_de_pasta.png)
+![alt text](./pastas.png)
 
 ### Como rodar a API
 
@@ -93,7 +93,6 @@ app.post("/register", async (req, res) => {
 
 - Localização: `backend/middleware/uploadIamge.js`
 - Armazena os arquivos na pasta: `./public/upload/docUsers`
-                
 
 ### Rota de Upload de documentos PDF
 
@@ -139,3 +138,60 @@ app.post("/upload-docs", uploadDocs.single("image"), (req, res) => {
 - `/list-prontuario` -> Apagar documento do sistema pelo ID selecionado
 - `/deleteFiles/:id` -> Listagem de tipo de documento (Prontuarios)
 
+## Funcionalidades do Sistema / Frontend
+
+### Setup de ambiente:
+
+- [React](https://react.dev/)
+
+### Estrutura de pastas
+
+![alt text](./pastaFrontEnd.png)
+
+### Como criar o projeto
+
+- _npx create-react-app name-app_
+
+### Como rodar o projeto
+
+- _npm start_
+- API rodando na porta http://localhost:3000
+- Pronto 🎉
+
+### Componentes criados
+
+- Forms -> `frontend/components/Forms`:
+  - newDoc.jsx
+  - newProntuario.jsx
+  - newRegister.jsx
+- Modal -> `frontend/components/Modal`:
+  - ModalFirstDocument.jsx
+  - ModalNewNewDocument.jsx
+  - ModalNewRegister.jsx
+  - ModalNewProntuario.jsx
+- Navbar -> `frontend/components/NavBar`:
+  - NavBar.jsx
+- Sidebar -> `frontend/components/Sidebar`:
+  - SideBar.jsx
+- Tables -> `frontend/components/Tables`:
+  - TableDocs.jsx
+  - TableProntuarios.jsx
+  - TablesUsers.jsx
+
+### Context API
+
+- Autentificação de usuário: `frontend/contexts/auth.jsx`:
+
+### Pagina criadas
+
+- Arquivos
+- EditUser
+- Home
+- Login
+- Prontuarios
+- UsersList
+- VizualizarDocs
+
+### API
+
+- Services: `frontend/services/api.jsx`:
