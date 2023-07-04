@@ -187,9 +187,9 @@ app.post("/upload-docs", uploadDocs.single("image"), (req, res) => {
 - Arquivos
 - EditUser
 - Home
-- Login
+- Login -> Privado, somente para usuários autenticados
 - Prontuarios
-- UsersList
+- UsersList -> Privado, somente usuários com permissão de Adminstrador e Gerente
 - VizualizarDocs
 
 ### API
