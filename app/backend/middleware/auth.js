@@ -1,19 +1,18 @@
-//Authenticação de usuario
-//Gerando jwt
-
+//User Authentication
+//JWT
 const jwt = require('jsonwebtoken');
 const {
     promisify
 } = require('util');
 
+//Export JWT
 module.exports = {
-    eAdmin: async function (req, res, next) {
+    eAdmin: function (req, res, next) {
         const authHeaders = req.headers.authorization;
-        // console.log(authHeaders);
         if (!authHeaders) {
             return res.status(400).json({
                 erro: true,
-                message: "Erro: Necessario realizar o login ara acessar a página! Fala o token A"
+                message: "Erro: Necessario realizar o login para acessar a página!"
             });
         }
 
@@ -23,19 +22,18 @@ module.exports = {
         if (!token) {
             return res.status(400).json({
                 erro: true,
-                message: "Erro: Necessario realizar o login ara acessar a página! Fala o token B"
+                message: "Erro: Necessario realizar o login para acessar a página!"
             });
         }
-
-        //Verificar se o token é valido
+        //if valid TOKEN
         try {
-            const decode = await promisify(jwt.verify)(token, "95d30169a59c418b52013315fc81bc99fdf0a7b03a116f346ab628496f349ed5");
+            const decode = promisify(jwt.verify)(token, "95d30169a59c418b52013315fc81bc99fdf0a7b03a116f346ab628496f349ed5");
             req.userId = decode.id;
             return next();
         } catch (error) {
             return res.status(400).json({
                 erro: true,
-                message: "Erro: Necessario realizar o login ara acessar a página! Token invalido"
+                message: "Erro: Necessario realizar o login para acessar a página!"
             });
         }
     }
