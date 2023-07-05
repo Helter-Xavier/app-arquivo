@@ -1,8 +1,8 @@
 //import sequilize  
 const Sequelize = require('sequelize');
 
-//Conection databse  ("nomebd", "usuario", "senha usuario")
-const sequelize = new Sequelize("arquivo", "root", "208199", {
+//Conection databse  ("nomebd", "usuario", "senha usuario root")
+const sequelize = new Sequelize("...", "...", "...", {
     host: "localhost", //Execcting in localhost
     dialect: "mysql", //
     logging: false
